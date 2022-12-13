@@ -1,17 +1,62 @@
 /* font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
 
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --body-text-color: #272142;
+  --primary-font-family: "Poppins", sans-serif;
+  --accent-font-family: "Playfair Display", serif;
+  --box-shadow: 0 5px 10px rgba(108, 99, 255, 0.3);
+}
+
 h1 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 48px;
+  font-family: var(--accent-font-family);
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 128px;
+  text-align: center;
+  color: #000000;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #272142;
 }
 
-.container {
-  background-color: #e4dbf8;
+.hello {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hello p {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  color: #272142;
+}
+
+.started-button {
+  padding: 18px 46px;
+  background: var(--primary-color);
+  border-radius: 4px;
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.started-button:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+  box-shadow: var(--box-shadow);
 }
