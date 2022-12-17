@@ -146,10 +146,21 @@ h6 {
 .content p {
   font-family: var(--primary-font-family);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
   text-align: center;
   color: rgba(39, 33, 66, 0.7);
+}
+
+.content a {
+  display: block;
+  text-align: center;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(39, 33, 66, 0.7);
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
