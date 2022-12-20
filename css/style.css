@@ -163,6 +163,40 @@ h6 {
   text-decoration: none;
 }
 
+.logo {
+  max-height: 42px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+nav a {
+  color: rgba(39, 33, 66, 0.7);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--primary-color);
+}
+
 @media (max-width: 1200px) {
   .project-description {
     padding: 20px 0;
@@ -206,5 +240,15 @@ h6 {
   .content-container h1 {
     font-size: 48px;
     line-height: 56px;
+  }
+
+  .logo {
+    max-height: 35px;
+  }
+
+  nav li {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 10px;
   }
 }
