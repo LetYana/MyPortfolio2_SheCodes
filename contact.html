@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Front-end developer - Yana Kryshevych</title>
+    <meta
+      name="description"
+      content="Yana Kryshevych is a front-end engineer, based in Amsterdam."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +24,36 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/index.html" title="Homepage">
+          <img
+            src="/img/logo.png"
+            class="logo d-none d-md-block"
+            alt="Yana's logo"
+          />
+          <img
+            src="/img/logo_small.png"
+            class="logo d-block d-md-none"
+            alt="Yana's logo"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/index.html" title="Homepage">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Yana">About</a>
+          </li>
+          <li>
+            <a href="/work.html" title="Work examples">Work</a>
+          </li>
+          <li class="active">
+            <a href="/contact.html" title="Contact Yana">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-md-5 text-center">Let's get in touch!</h1>
@@ -27,15 +61,32 @@
         <p><i class="fa-solid fa-location-dot"></i> West park, Amsterdam</p>
         <hr />
         <h6>Email</h6>
-        <a href="mailto:yanakryshevych@gmail.com"
+        <a href="mailto:yanakryshevych@gmail.com" title="Mail to Yana"
           ><i class="fa-solid fa-envelope"></i> yanakryshevych@gmail.com</a
         >
         <hr />
         <h6>Phone</h6>
-        <a href="tel:+021 3456 789"
+        <a href="tel:+021 3456 789" title="Call to Yana"
           ><i class="fa-solid fa-phone"></i> 021 3456 789</a
         >
       </div>
+      <footer>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/yana-kryshevych-459a49234"
+            target="_blank"
+            title="Linkedin Profile"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/LetYana" target="_blank"
+            ><i class="fa-brands fa-github" title="GitHub Profile"></i
+          ></a>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-facebook" title="Facebook Profile"></i
+          ></a>
+        </div>
+      </footer>
     </div>
 
     <script

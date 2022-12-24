@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Front-end developer - Yana Kryshevych</title>
+    <meta
+      name="description"
+      content="Yana Kryshevych is a front-end engineer, based in Amsterdam."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +24,32 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/index.html" title="Homepage">
+          <img
+            src="/img/logo.png"
+            class="logo d-none d-md-block"
+            alt="Yana's logo"
+          />
+          <img
+            src="/img/logo_small.png"
+            class="logo d-block d-md-none"
+            alt="Yana's logo"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/index.html" title="Homepage">Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" title="About Yana">About</a>
+          </li>
+          <li><a href="/work.html" title="Work examples">Work</a></li>
+          <li><a href="/contact.html" title="Contact Yana">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
@@ -32,13 +62,57 @@
               everything is well explained, homework and deadlines are good for
               keep focus
             </p>
-            <a href="#" class="btn started-button">View all project</a>
+            <a
+              href="/work.html"
+              title="See Yana's works"
+              class="btn started-button"
+              >View all project</a
+            >
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="/img/IMG_0043.jpg" class="img-fluid" alt="" />
+          <img src="/img/IMG_0043.jpg" class="img-fluid" alt="Yana portrait" />
         </div>
       </div>
+      <footer>
+        <div
+          class="contact-box d-flex h-100 justify-content-between mb-5 d-none d-md-flex"
+        >
+          <div>
+            <h4>Work Inquiry</h4>
+            <h3>Let’s work together and i’ll help you by all my best</h3>
+          </div>
+          <div class="row justify-content-center align-self-center">
+            <a
+              href="/contact.html"
+              title="Contact Yana"
+              class="btn started-button"
+              >Let’s talk here</a
+            >
+          </div>
+        </div>
+        <a
+          href="mailto:yanakryshevych@gmail.com"
+          class="imail-link mb-5"
+          title="Mail to Yana"
+          >yanakryshevych@gmail.com</a
+        >
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/yana-kryshevych-459a49234"
+            target="_blank"
+            title="Linkedin Profile"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/LetYana" target="_blank"
+            ><i class="fa-brands fa-github" title="GitHub Profile"></i
+          ></a>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-facebook" title="Facebook Profile"></i
+          ></a>
+        </div>
+      </footer>
     </div>
 
     <script
