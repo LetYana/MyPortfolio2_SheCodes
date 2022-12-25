@@ -5,6 +5,7 @@ font-family: 'Poppins', sans-serif; */
   --primary-color: #6c63ff;
   --secondary-color: #f9f7fe;
   --body-text-color: #272142;
+  --body-black: #212529;
   --primary-font-family: "Poppins", sans-serif;
   --accent-font-family: "Playfair Display", serif;
   --box-shadow: 0 5px 10px rgba(108, 99, 255, 0.3);
@@ -15,7 +16,7 @@ h1 {
   font-weight: 700;
   font-size: 96px;
   line-height: 1.5;
-  color: #000000;
+  color: var(--body-black);
 }
 
 h2 {
@@ -23,7 +24,7 @@ h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: #272142;
+  color: var(--body-text-color);
 }
 
 h3 {
@@ -62,6 +63,18 @@ h6 {
   text-align: center;
   font-size: 24px;
   line-height: 36px;
+  color: var(--body-black);
+}
+
+.contact-page-link a {
+  display: block;
+  text-align: center;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(39, 33, 66, 0.7);
+  text-decoration: none;
 }
 
 .started-button {
@@ -74,6 +87,7 @@ h6 {
   line-height: 27px;
   color: #ffffff;
   text-align: center;
+  transition: all 100ms ease-in-out;
 }
 
 .started-button:hover {
@@ -105,6 +119,7 @@ h6 {
   line-height: 24px;
   text-align: center;
   padding: 18px 25px;
+  transition: all 100ms ease-in-out;
 }
 
 .btn-launch-app:hover {
@@ -152,19 +167,12 @@ h6 {
   color: rgba(39, 33, 66, 0.7);
 }
 
-.content a {
-  display: block;
-  text-align: center;
-  font-family: var(--primary-font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: rgba(39, 33, 66, 0.7);
-  text-decoration: none;
-}
-
 .logo {
   max-height: 42px;
+}
+
+.workpagepicture {
+  transition: all 100ms ease-in-out;
 }
 
 .workpagepicture:hover {
@@ -225,7 +233,7 @@ footer .imail-link {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-  color: #000000;
+  color: var(--body-black);
 }
 
 footer .imail-link:hover {
@@ -239,7 +247,7 @@ footer .social-links a {
   padding: 10px 15px;
   font-size: 18px;
   border-radius: 50%;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 footer .social-links a:hover {
